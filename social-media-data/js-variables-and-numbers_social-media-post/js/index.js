@@ -10,7 +10,15 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+let title = "Astronomy";
 
+let text = "The wonders of the universe";
+
+let numberOfLikes = 73;
+
+let userName = "Victor Santos";
+
+let isReported = true;
 // --^-- write your code here --^--
 
 /*
@@ -18,5 +26,5 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+console.log(title, text, numberOfLikes, userName, isReported);
 // --^-- write your code here --^--
