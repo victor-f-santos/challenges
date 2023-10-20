@@ -2,13 +2,26 @@ export function getFirstNames(people) {
   return people.map((person) => person.firstName);
 }
 
-export function getFullNames(people) {}
+export function getFullNames(people) {
+  return people.map((person) => `${person.firstName} ${person.lastName}`);
+}
 
-export function getNameAndAge(people) {}
+export function getNameAndAge(people) {
+  return people.map((person) => `${person.lastName} (${person.age})`);
+}
 
-export function getPeopleByAge(people, age) {}
+export function getPeopleByAge(people, age) {
+  return people.filter((person) => person.age === age);
+}
 
-export function getPeopleNamesOlderThan(people, age) {}
+export function getPeopleNamesOlderThan(people, age) {
+  for (const person of people) {
+    if (person.age > age) {
+      return [`${person.firstName} ${person.lastName}`];
+    }
+  }
+  // return people.forOf((person) => person.age > age);
+}
 
 export function getPeopleByLastName(people, lastName) {}
 
